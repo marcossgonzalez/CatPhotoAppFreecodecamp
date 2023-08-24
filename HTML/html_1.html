@@ -24,10 +24,20 @@
             <!-- O Elemento p é usado para criar parágrafo de textos em sites.
             Vamos criar um elemento p abaixo do elemento <h2> com o seguinte texto:
                 See more cat photos in our gallery.-->
-            <p>See more cat photos in our gallery:</p>
+            <!--Podemos também ancorar uo elemento de ancoragem (ou tag) <a> ao redor de
+                determinadas palavras. Nesse caso, usaremos a ancoragem para transformar
+            "cat photos" em um link para "https://freecatphotoapp.com"-->
+            <p>See more <a href="https://freecatphotoapp.com" target="_blank">cat photos</a> in our gallery:</p>
             <!--Podemos adicionar um elemento de imagem abaixo do elemento de fotos de gatos.
             Os elementos sem fechamento são conhecidos como elementos com auto-fechamento, ou 
             self-closing tag-->
+            <!--o atributo 'target' pode ser usado com o valor _blank na ancoragem
+            <a> para abrir o elemento em uma nova aba-->
+            <!--Como adicionamos o elemento com o link de ancoragem ao redor de "cat photos"
+            não precisamos mais do elemento de ancoragem para o link abaixo-->
+            <!--<a href="https://freecatphotoapp.com"> Link to cat pictures</a>-->
+            <!--Um link de texto deve ser colocado entre as aberturas do elemento de referência para link
+            <a></a> para que o texto de ancoragem tenha efeito-->
             <img src="Resources/relaxing-cat.jpg" alt="A cute orange cat lying on its back">
             <!--Atributos são termos especiais usados com elementos para controlar o comportamento
             de um elemento. O atributo "src" em uma imagem especifica onde a imagem está localizada.
@@ -36,6 +46,9 @@
             servem para que os leitores de tela melhorem a acessibilidade se a imagem não carregar
             por algum motivo. O atributo "alt" deve vir depois da fonte ou "src=""" da imagem mostrada
             nesse caso, colocaremos um atributo "alt" com o texto 'A cute orange cat lying on its back'-->
+            <!--Um elemento de ancoragem serve para referenciar um elemento, sendo usado com
+            "<a href -'para referenciar a ancoragem'- ='https://freecodecamp.org'></a>". Sendo necessário
+            fechar o elemento de ancoragem-->
         </main>
     </body>
 </html>

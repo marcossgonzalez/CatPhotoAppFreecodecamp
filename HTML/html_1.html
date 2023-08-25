@@ -1,6 +1,13 @@
 <html>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Cats</title>
+    </head>
     <body>
-    <!--O corpo do site é definido pelo elemento <body> e o site é
+        <title>Cats</title> 
+        <!--O corpo do site é definido pelo elemento <body> e o site é
         definido pelo elemento <html>
         ambos devem ser fechados-->
         <!-- HTML5 contém elementos de identificação de área de conteúdo
@@ -33,7 +40,7 @@
                 dos elementos futuros;  o elemento p, ancorar os elementos com 
                 a âncora <a> a partir do elemento <h2> e deixá-los dentro do elemento de 'section'-->
 
-                <p>See more <a target="_blank" href="https://freecatphotoapp.com" >cat photos</a> in our gallery:</p>
+                <p>See more <a href="https://freecatphotoapp.com" target="_top">cat photos</a> in our gallery:</p>
 
                 <!--Podemos adicionar um elemento de imagem abaixo do elemento de fotos de gatos.
                 Os elementos sem fechamento são conhecidos como elementos com auto-fechamento, ou 
@@ -103,10 +110,61 @@
                 <h2>Cat Form</h2>
                 <!--Podemos adicionar também o elemento form para adicionar formulários
                 às páginas-->
-                <form action="https://freecatphotoapp.com/submit-cat-photo"></form>
+                <form action="https://freecatphotoapp.com/submit-cat-photo">
+                    <label><input type="radio">Indoor></label>
+                    <input type="text" 
+                    name="catphotourl" 
+                    placeholder="cat photo URL" 
+                    required>
+                    <button type="submit">Submit</button>
+                </form>
                 <!--O atributo action indica aonde o dado deve ser enviado. Por exemplo:
                 <form action="/submit-url"></form>. Isso dirá ao browser que os dados do formulário
                 devem ser enviados para o caminho /submit-url-->
+                <!--O elemento <input> permite que dados sejam coletados de diversas maneiras
+                por um formulário web. Assim como os elementos de <img>, possuem auto-fechamento,
+                ou self-enclosing e não precisam que suas tags sejam fechadas-->
+                <!--Existem diversos tipos de input, ou entrada, que se podem enviar usando
+                o atributo 'type'. É possível criar diversos tipos de campos com esse atributo.
+                -->
+
+                <!--Para que seja possível que os dados do formulário sejam acessados é necessário,
+                que na localização especificada pelo atributo 'action', seja dado um nome
+                para o atributo e definido um valor para representar o dado sendo enviado.
+                Por exemplo: a sintaxe para um campo de e-mail seria:
+                <input type="text" name="email">-->
+
+                <!--Placeholders (atributo usado dessa maneira: placeholder="") são usados como dicas para qual tipo de informação o usuário
+                deve inserir na entrada. Por exemplo: <input type="text" placeholder="Email adress"-->
+
+                <!--Para prevenir que um usuário envie uma informação requerida, é necessário adicionar o atributo
+                'required' para um elemento <input>. Não é necessário definir um valor para 'required',
+                somente é necessário adicionar a palavra atributo 'required' ao elemento <input>, 
+                certificando-se que existe um espaço entre ele e outros atributos-->
+
+                <!--O elemento <button> cria um botão clicável. Por exemplo: '<button> Clique aqui</button>.
+                    Isso cria um botão com o texto 'Clique aqui'.
+                Podemos adicionar, por exemplo, um elemento <button> com o texto 'Submit' depois do elemento
+                    <input> O padrão de comportamento ao clicar um formulário sem qualquer atributos
+                para envio é de enviar o formulário para o local especificado no atributo 'action'-->
+
+                <!-- Como o input e o botão de enviar ficaram alinhados, isso ocorreu por conta
+                da ausência de uma nova linha
+                pode causar confusão.
+                Adicionar o atributo 'type' ao valor de submit no botão definirá, claramente, que o elemento
+
+                <!--Podemos usar botões-radio para questões onde queremos somente uma resposta para várias
+                opções.
+                Aqui temos um exemplo de botão-radio com a opção 'cat:'
+                <input type="radio"> cat. Lembre-se: elementos do tipo <input> são self-enclosed
+                ou possuem fechamento-automático, ou auto-fechamento, não precisando fechar a tag
+                de abertura.-->
+
+                <!--Elementos de label são usados para ajudar associar o texto de uma entrada
+                de tela). Por exemplo: <label><input type="radio"> cat</label fará com que
+                clicar na palavra gato também selecione o botão-rádio correspondente.
+                Podemos colocar um elemento <label> antes do botão-rádio-->
+
             </section>
             <!--Atributos são termos especiais usados com elementos para controlar o comportamento
             de um elemento. O atributo "src" em uma imagem especifica onde a imagem está localizada.
@@ -119,5 +177,6 @@
             "<a href -'para referenciar a ancoragem'- ='https://freecodecamp.org'></a>". Sendo necessário
             fechar o elemento de ancoragem-->
         </main>
+        
     </body>
 </html>

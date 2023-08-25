@@ -20,25 +20,78 @@
             <!--Elementos são definidos pela chave <> e pode sem fechados ou não. No caso dos elementos
             para header, existe o fechamento dos elementos - i.e. <h1> seguido de </h1>-->
             <!--Agora adicionaremos o elemento h2 para fotos de gatos-->
-            <h2>Cat Photos</h2>
-            <!-- O Elemento p é usado para criar parágrafo de textos em sites.
-            Vamos criar um elemento p abaixo do elemento <h2> com o seguinte texto:
-                See more cat photos in our gallery.-->
-            <!--Podemos também ancorar uo elemento de ancoragem (ou tag) <a> ao redor de
-                determinadas palavras. Nesse caso, usaremos a ancoragem para transformar
-            "cat photos" em um link para "https://freecatphotoapp.com"-->
-            <p>See more <a href="https://freecatphotoapp.com" target="_blank">cat photos</a> in our gallery:</p>
-            <!--Podemos adicionar um elemento de imagem abaixo do elemento de fotos de gatos.
-            Os elementos sem fechamento são conhecidos como elementos com auto-fechamento, ou 
-            self-closing tag-->
-            <!--o atributo 'target' pode ser usado com o valor _blank na ancoragem
-            <a> para abrir o elemento em uma nova aba-->
-            <!--Como adicionamos o elemento com o link de ancoragem ao redor de "cat photos"
-            não precisamos mais do elemento de ancoragem para o link abaixo-->
-            <!--<a href="https://freecatphotoapp.com"> Link to cat pictures</a>-->
-            <!--Um link de texto deve ser colocado entre as aberturas do elemento de referência para link
-            <a></a> para que o texto de ancoragem tenha efeito-->
-            <img src="Resources/relaxing-cat.jpg" alt="A cute orange cat lying on its back">
+            <section>   
+                <!--<h2>Cat Photos</h2>-->
+                <!-- O Elemento p é usado para criar parágrafo de textos em sites.
+                Vamos criar um elemento p abaixo do elemento <h2> com o seguinte texto:
+                    See more cat photos in our gallery.-->
+                <!--Podemos também ancorar uo elemento de ancoragem (ou tag) <a> ao redor de
+                    determinadas palavras. Nesse caso, usaremos a ancoragem para transformar
+                "cat photos" em um link para "https://freecatphotoapp.com"-->
+
+                <!--Podemos fazer uso do elemento 'section' para separar as fotos de gatos
+                dos elementos futuros;  o elemento p, ancorar os elementos com 
+                a âncora <a> a partir do elemento <h2> e deixá-los dentro do elemento de 'section'-->
+
+                <p>See more <a target="_blank" href="https://freecatphotoapp.com" >cat photos</a> in our gallery:</p>
+
+                <!--Podemos adicionar um elemento de imagem abaixo do elemento de fotos de gatos.
+                Os elementos sem fechamento são conhecidos como elementos com auto-fechamento, ou 
+                self-closing tag-->
+                <!--o atributo 'target' pode ser usado com o valor _blank na ancoragem
+                <a> para abrir o elemento em uma nova aba-->
+                <!--Como adicionamos o elemento com o link de ancoragem ao redor de "cat photos"
+                não precisamos mais do elemento de ancoragem para o link abaixo-->
+                <!--<a href="https://freecatphotoapp.com"> Link to cat pictures</a>-->
+                <!--Um link de texto deve ser colocado entre as aberturas do elemento de referência para link
+                <a></a> para que o texto de ancoragem tenha efeito-->
+                <!--É possível também adicionar ancoragem ao redor de imagens e transformar uma imagem
+                em um link, circulando com a âncora <a> o elemento <img>
+                faremos isso adicionando o link 'https://freecatphotoapp.com' ao atributo de âncora
+                do valor-->
+                <a href="https://freecatphotoapp.com">
+                    <img src="Resources/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
+                </a>
+            </section>
+            <section>
+                <h2>Cat Lists</h2>
+                <!--Podemos fazer uma lista de coisas que gatos gostam de fazer-->
+                <h3>Things cats love:</h3>
+                <!--Listas não ordenadas são definidar pelo elemento <ul>-->
+                <ul>
+                    <!--items de lista são definidos pelo elemento <li> para criar uma lista
+                        Podemos criar uma lista de coisas que gatos gostas-->
+                    <li>cat nip</li>
+                    <li>laser pointers</li>
+                    <li>lasagna</li>
+                </ul>
+                <!--O elemento 'figure' representa um conteúdo auto-contido que permite associar
+                uma imagem a uma legenda-->
+                <!--O elemento figure caption (figcaption) permite adicionar uma legenda
+                para descrever uma imagem contida no elemento <figure>
+                para esse exemplo, podemos adicionar a frase 'Cute cats love lasagna',
+                e isso adicionará a legenda "Cute cats love lasagna" ao elemento <figure> -->
+                <figure>
+                    <img src="Resources/lasagna.jpg" alt="A slice of lasagna on a plate.">
+                    <!--O elemento 'em' serve como um elemento de contenção para ênfase.
+                    Podemos adicioná-lo à palavra 'love'-->
+                    <figcaption>Cute cats <em>love</em> lasagna</figcaption>
+                </figure>
+                <h3>
+                    Top 3 things cats hate:
+                    <!--Uma lista ordenada <ol> é um elemento similar ao elemento <ul>
+                    para listas não ordenadas, mas as listas ordenadas são numeradas
+                    quando mostradas.-->
+                    <ol>
+                        <li>flea treatment</li>
+                        <li>thunder</li>
+                        <li>other cats</li>
+                    </ol>
+                    <figure>
+                        <img src="Resources/cats.jpg">
+                    </figure>
+                </h3>   
+            </section>
             <!--Atributos são termos especiais usados com elementos para controlar o comportamento
             de um elemento. O atributo "src" em uma imagem especifica onde a imagem está localizada.
             Nesse caso, a imagem está localizada na pasta Resources com nome de relaxing-cat.jpg-->

@@ -1,184 +1,230 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Cats</title>
-    </head>
-    <body>
-        <title>Cats</title> 
-        <!--O corpo do site é definido pelo elemento <body> e o site é
+  <head>
+    <meta charset="utf-8" />
+    <title>Cats</title>
+  </head>
+
+  <body>
+    <title>Cats</title>
+    <!--O corpo do site é definido pelo elemento <body> e o site é
         definido pelo elemento <html>
         ambos devem ser fechados-->
-        <!-- HTML5 contém elementos de identificação de área de conteúdo
+    <!-- HTML5 contém elementos de identificação de área de conteúdo
         Esses elementos podem fazer seu site html ser mais fácil de ser lido com
         a ajuda do SEO (Search Engine Optimization) e sistemas de acessibilidade-->
-        <!--Podemos identificar o <main> elemento de uma página abrindo o elemento antes do elemento
+    <!--Podemos identificar o <main> elemento de uma página abrindo o elemento antes do elemento
             <h1> e depois do elemento <p> -->
-        <main>
-            <!--Os elementos dentro do elemento <main> são chamados de elementos inclusos, ou nesting.
+    <main>
+      <!--Os elementos dentro do elemento <main> são chamados de elementos inclusos, ou nesting.
                 Esses elementos separam dois espaços do elemento no qual eles estão contidos.
                 Para facilitar a leitura, adicionamos a identação, ou seja, esse espaço
                 entre os elementos que definem onde eles se localizam-->
-            <h1>CatPhotoApp</h1>
-            <!--Elementos de h1 até h6 são usados para definir a importância do conteúdo
+      <h1>CatPhotoApp</h1>
+      <!--Elementos de h1 até h6 são usados para definir a importância do conteúdo
             designado
             Quando menor o número, maior a importância-->
-            <!--Elementos são definidos pela chave <> e pode sem fechados ou não. No caso dos elementos
+      <!--Elementos são definidos pela chave <> e pode sem fechados ou não. No caso dos elementos
             para header, existe o fechamento dos elementos - i.e. <h1> seguido de </h1>-->
-            <!--Agora adicionaremos o elemento h2 para fotos de gatos-->
-            <section>   
-                <!--<h2>Cat Photos</h2>-->
-                <!-- O Elemento p é usado para criar parágrafo de textos em sites.
+      <!--Agora adicionaremos o elemento h2 para fotos de gatos-->
+      <section>
+        <!--<h2>Cat Photos</h2>-->
+        <!-- O Elemento p é usado para criar parágrafo de textos em sites.
                 Vamos criar um elemento p abaixo do elemento <h2> com o seguinte texto:
                     See more cat photos in our gallery.-->
-                <!--Podemos também ancorar uo elemento de ancoragem (ou tag) <a> ao redor de
+        <!--Podemos também ancorar uo elemento de ancoragem (ou tag) <a> ao redor de
                     determinadas palavras. Nesse caso, usaremos a ancoragem para transformar
                 "cat photos" em um link para "https://freecatphotoapp.com"-->
 
-                <!--Podemos fazer uso do elemento 'section' para separar as fotos de gatos
+        <!--Podemos fazer uso do elemento 'section' para separar as fotos de gatos
                 dos elementos futuros;  o elemento p, ancorar os elementos com 
                 a âncora <a> a partir do elemento <h2> e deixá-los dentro do elemento de 'section'-->
 
-                <p>See more <a href="https://freecatphotoapp.com" target="_top">cat photos</a> in our gallery:</p>
+        <p>
+          See more
+          <a href="https://freecatphotoapp.com" target="_blank">cat photos</a>
+          in our gallery:
+        </p>
 
-                <!--Podemos adicionar um elemento de imagem abaixo do elemento de fotos de gatos.
+        <!--Podemos adicionar um elemento de imagem abaixo do elemento de fotos de gatos.
                 Os elementos sem fechamento são conhecidos como elementos com auto-fechamento, ou 
                 self-closing tag-->
-                <!--o atributo 'target' pode ser usado com o valor _blank na ancoragem
+        <!--o atributo 'target' pode ser usado com o valor _blank na ancoragem
                 <a> para abrir o elemento em uma nova aba-->
-                <!--Como adicionamos o elemento com o link de ancoragem ao redor de "cat photos"
+        <!--Como adicionamos o elemento com o link de ancoragem ao redor de "cat photos"
                 não precisamos mais do elemento de ancoragem para o link abaixo-->
-                <!--<a href="https://freecatphotoapp.com"> Link to cat pictures</a>-->
-                <!--Um link de texto deve ser colocado entre as aberturas do elemento de referência para link
+        <!--<a href="https://freecatphotoapp.com"> Link to cat pictures</a>-->
+        <!--Um link de texto deve ser colocado entre as aberturas do elemento de referência para link
                 <a></a> para que o texto de ancoragem tenha efeito-->
-                <!--É possível também adicionar ancoragem ao redor de imagens e transformar uma imagem
+        <!--É possível também adicionar ancoragem ao redor de imagens e transformar uma imagem
                 em um link, circulando com a âncora <a> o elemento <img>
                 faremos isso adicionando o link 'https://freecatphotoapp.com' ao atributo de âncora
                 do valor-->
-                <a href="https://freecatphotoapp.com">
-                    <img src="Resources/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
-                </a>
-            </section>
-            <section>
-                <h2>Cat Lists</h2>
-                <!--Podemos fazer uma lista de coisas que gatos gostam de fazer-->
-                <h3>Things cats love:</h3>
-                <!--Listas não ordenadas são definidar pelo elemento <ul>-->
-                <ul>
-                    <!--items de lista são definidos pelo elemento <li> para criar uma lista
+        <a href="https://freecatphotoapp.com">
+          <img
+            src="Resources/relaxing-cat.jpg"
+            alt="A cute orange cat lying on its back."
+          />
+        </a>
+      </section>
+      <section>
+        <h2>Cat Lists</h2>
+        <!--Podemos fazer uma lista de coisas que gatos gostam de fazer-->
+        <h3>Things cats love:</h3>
+        <!--Listas não ordenadas são definidar pelo elemento <ul>-->
+        <ul>
+          <!--items de lista são definidos pelo elemento <li> para criar uma lista
                         Podemos criar uma lista de coisas que gatos gostas-->
-                    <li>cat nip</li>
-                    <li>laser pointers</li>
-                    <li>lasagna</li>
-                </ul>
-                <!--O elemento 'figure' representa um conteúdo auto-contido que permite associar
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+        <!--O elemento 'figure' representa um conteúdo auto-contido que permite associar
                 uma imagem a uma legenda-->
-                <!--O elemento figure caption (figcaption) permite adicionar uma legenda
+        <!--O elemento figure caption (figcaption) permite adicionar uma legenda
                 para descrever uma imagem contida no elemento <figure>
                 para esse exemplo, podemos adicionar a frase 'Cute cats love lasagna',
                 e isso adicionará a legenda "Cute cats love lasagna" ao elemento <figure> -->
-                <figure>
-                    <img src="Resources/lasagna.jpg" alt="A slice of lasagna on a plate.">
-                    <!--O elemento 'em' serve como um elemento de contenção para ênfase.
+        <figure>
+          <img
+            src="Resources/lasagna.jpg"
+            alt="A slice of lasagna on a plate."
+          />
+          <!--O elemento 'em' serve como um elemento de contenção para ênfase.
                     Podemos adicioná-lo à palavra 'love'-->
-                    <figcaption>Cute cats <em>love</em> lasagna</figcaption>
-                </figure>
-                <h3>
-                    Top 3 things cats hate:
-                    <!--Uma lista ordenada <ol> é um elemento similar ao elemento <ul>
+          <figcaption>Cute cats <em>love</em> lasagna</figcaption>
+        </figure>
+        <h3>
+          Top 3 things cats hate:
+          <!--Uma lista ordenada <ol> é um elemento similar ao elemento <ul>
                     para listas não ordenadas, mas as listas ordenadas são numeradas
                     quando mostradas.-->
-                    <ol>
-                        <li>flea treatment</li>
-                        <li>thunder</li>
-                        <li>other cats</li>
-                    </ol>
-                    <figure>
-                        <img src="Resources/cats.jpg" alt="Five cats looking around a field.">
-                        <!--Podemos adicionar novamente o elemento figcaption com a frase
+          <ol>
+            <li>flea treatment</li>
+            <li>thunder</li>
+            <li>other cats</li>
+          </ol>
+          <figure>
+            <img
+              src="Resources/cats.jpg"
+              alt="Five cats looking around a field."
+            />
+            <!--Podemos adicionar novamente o elemento figcaption com a frase
                         'Cats hate other cats.'-->
-                        <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
-                        <!--Strong é um elemento que indica que um texto tem
+            <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+            <!--Strong é um elemento que indica que um texto tem
                         grande importância ou é urgente.
                         Podemos adicionar o elemento strong para indicar que 'hate' é de
                         grande importância.-->
-                    </figure>
-                </h3>   
-            </section>
-            <section>
-                <h2>Cat Form</h2>
-                <!--Podemos adicionar também o elemento form para adicionar formulários
+          </figure>
+        </h3>
+      </section>
+      <section>
+        <h2>Cat Form</h2>
+        <!--Podemos adicionar também o elemento form para adicionar formulários
                 às páginas-->
-                <form action="https://freecatphotoapp.com/submit-cat-photo">
-                    <label><input type="radio">Indoor></label>
-                    <input type="text" 
-                    name="catphotourl" 
-                    placeholder="cat photo URL" 
-                    required>
-                    <button type="submit">Submit</button>
-                </form>
-                <!--O atributo action indica aonde o dado deve ser enviado. Por exemplo:
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+          <label>
+            <input
+              id="indoor"
+              type="radio"
+              name="indoor-outdoor"
+              value="indoor"
+            /> indoor </label>
+          <label>
+            <input
+              id="outdoor"
+              type="radio"
+              name="indoor-outdoor"
+              value="outdoor"
+            /> outdoor </label
+          >
+          <input
+            type="text"
+            name="catphotourl"
+            placeholder="cat photo URL"
+            required
+          />
+          <button type="submit">Submit</button>
+        </form>
+        <!--O atributo action indica aonde o dado deve ser enviado. Por exemplo:
                 <form action="/submit-url"></form>. Isso dirá ao browser que os dados do formulário
                 devem ser enviados para o caminho /submit-url-->
-                <!--O elemento <input> permite que dados sejam coletados de diversas maneiras
+        <!--O elemento <input> permite que dados sejam coletados de diversas maneiras
                 por um formulário web. Assim como os elementos de <img>, possuem auto-fechamento,
                 ou self-enclosing e não precisam que suas tags sejam fechadas-->
-                <!--Existem diversos tipos de input, ou entrada, que se podem enviar usando
+        <!--Existem diversos tipos de input, ou entrada, que se podem enviar usando
                 o atributo 'type'. É possível criar diversos tipos de campos com esse atributo.
                 -->
 
-                <!--Para que seja possível que os dados do formulário sejam acessados é necessário,
+        <!--Para que seja possível que os dados do formulário sejam acessados é necessário,
                 que na localização especificada pelo atributo 'action', seja dado um nome
                 para o atributo e definido um valor para representar o dado sendo enviado.
                 Por exemplo: a sintaxe para um campo de e-mail seria:
                 <input type="text" name="email">-->
 
-                <!--Placeholders (atributo usado dessa maneira: placeholder="") são usados como dicas para qual tipo de informação o usuário
+        <!--Placeholders (atributo usado dessa maneira: placeholder="") são usados como dicas para qual tipo de informação o usuário
                 deve inserir na entrada. Por exemplo: <input type="text" placeholder="Email adress"-->
 
-                <!--Para prevenir que um usuário envie uma informação requerida, é necessário adicionar o atributo
+        <!--Para prevenir que um usuário envie uma informação requerida, é necessário adicionar o atributo
                 'required' para um elemento <input>. Não é necessário definir um valor para 'required',
                 somente é necessário adicionar a palavra atributo 'required' ao elemento <input>, 
                 certificando-se que existe um espaço entre ele e outros atributos-->
 
-                <!--O elemento <button> cria um botão clicável. Por exemplo: '<button> Clique aqui</button>.
+        <!--O elemento <button> cria um botão clicável. Por exemplo: '<button> Clique aqui</button>.
                     Isso cria um botão com o texto 'Clique aqui'.
                 Podemos adicionar, por exemplo, um elemento <button> com o texto 'Submit' depois do elemento
                     <input> O padrão de comportamento ao clicar um formulário sem qualquer atributos
                 para envio é de enviar o formulário para o local especificado no atributo 'action'-->
 
-                <!-- Como o input e o botão de enviar ficaram alinhados, isso ocorreu por conta
+        <!-- Como o input e o botão de enviar ficaram alinhados, isso ocorreu por conta
                 da ausência de uma nova linha
                 O botão que foi adicionado enviará o formulário por padrão; entretanto, contar com o padrão comportamental
                 pode causar confusão.
                 Adicionar o atributo 'type' ao valor de submit no botão definirá, claramente, que o elemento
                 é um botão.-->
 
-                <!--Podemos usar botões-radio para questões onde queremos somente uma resposta para várias
+        <!--Podemos usar botões-radio para questões onde queremos somente uma resposta para várias
                 opções.
                 Aqui temos um exemplo de botão-radio com a opção 'cat:'
                 <input type="radio"> cat. Lembre-se: elementos do tipo <input> são self-enclosed
                 ou possuem fechamento-automático, ou auto-fechamento, não precisando fechar a tag
                 de abertura.-->
 
-                <!--Elementos de label são usados para ajudar associar o texto de uma entrada
+        <!--Elementos de label são usados para ajudar associar o texto de uma entrada
                 com um elemento de entrada (especialmente para tecnologias assistivas como leitores
                 de tela). Por exemplo: <label><input type="radio"> cat</label fará com que
                 clicar na palavra gato também selecione o botão-rádio correspondente.
                 Podemos colocar um elemento <label> antes do botão-rádio-->
 
-            </section>
-            <!--Atributos são termos especiais usados com elementos para controlar o comportamento
+        <!--O atributo 'id' é usado para especificar elementos HTML.
+                O valor de cada atributo tem de ser único para a página toda.
+                Podemos adicionar um atributo 'id' ao valor 'Indoor' no botão-rádio
+                Observação: quando os elementos têm múltiplos atributos, a ordem dos atributos
+                não importará.-->
+
+        <!--Os atributos do tipo botão-rádio podem ser selecionados ao mesmo tempo. Para que isso
+                seja evitado, podemos adicionar atributos de 'name' com valores que os diferenciem;
+                tendo atributos 'name' com o mesmo valor faz com que a seleção de uma opção
+                retire a seleção da outra.-->
+
+        <!-- Se você selecionar um botão-rádio e enviar o formulário, os dados serão baseados
+                em seu nome e valores de atributos. Já que os botões-rádio não possuem um
+                atributo 'value', os dados do formulário incluirão 'indor-outdoor=on',
+                o que não é útil quando se tem diversos botões.
+                Vamos adicionar o atributo 'value' ao botões-rádio e definir, por conveniência
+                os mesmos valores que seus atributos de 'id' -->
+      </section>
+      <!--Atributos são termos especiais usados com elementos para controlar o comportamento
             de um elemento. O atributo "src" em uma imagem especifica onde a imagem está localizada.
             Nesse caso, a imagem está localizada na pasta Resources com nome de relaxing-cat.jpg-->
-            <!--Todas os elementos de imagem devem possuir um atributo chamado "alt"; esses atributos
+      <!--Todas os elementos de imagem devem possuir um atributo chamado "alt"; esses atributos
             servem para que os leitores de tela melhorem a acessibilidade se a imagem não carregar
             por algum motivo. O atributo "alt" deve vir depois da fonte ou "src=""" da imagem mostrada
             nesse caso, colocaremos um atributo "alt" com o texto 'A cute orange cat lying on its back'-->
-            <!--Um elemento de ancoragem serve para referenciar um elemento, sendo usado com
+      <!--Um elemento de ancoragem serve para referenciar um elemento, sendo usado com
             "<a href -'para referenciar a ancoragem'- ='https://freecodecamp.org'></a>". Sendo necessário
             fechar o elemento de ancoragem-->
-        </main>
-        
-    </body>
+    </main>
+  </body>
 </html>

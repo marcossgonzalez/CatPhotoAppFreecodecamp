@@ -1,2 +1,2 @@
 # Learning_Front
- Learning front end from zero
+ Learning and remembering front end from zero

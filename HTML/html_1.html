@@ -124,21 +124,57 @@
         <!--Podemos adicionar também o elemento form para adicionar formulários
                 às páginas-->
         <form action="https://freecatphotoapp.com/submit-cat-photo">
-          <label>
+          <fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <label>
+              <input
+                id="indoor"
+                type="radio"
+                name="indoor-outdoor"
+                value="indoor"
+              />
+              indoor
+            </label>
+            <label>
+              <input
+                id="outdoor"
+                type="radio"
+                name="indoor-outdoor"
+                value="outdoor"
+              />
+              outdoor
+            </label>
+          </fieldset>
+          <!--Os elementos <legend> agem como uma legenda para o conteúdo dentro do elemento
+                fieldset. Eles dão um contexto sobre o conteúdo a ser selecionado, ou inserido,
+                pelo usuário.
+                Podemos adicionar um elemento <legend> com o texto 'Is your cat an indoor or outdoor cat?'
+                acima dos botões-rádio.-->
+          <fieldset>
+            <legend>What's your cat's personality?</legend>
             <input
-              id="indoor"
-              type="radio"
-              name="indoor-outdoor"
-              value="indoor"
-            /> indoor </label>
-          <label>
+              id="loving"
+              value="loving"
+              type="checkbox"
+              name="personality"
+            />
+            <label for="loving">Loving</label>
+            <input id="lazy" value="lazy" type="checkbox" name="personality" />
+            <label for="lazy">Lazy</label>
             <input
-              id="outdoor"
-              type="radio"
-              name="indoor-outdoor"
-              value="outdoor"
-            /> outdoor </label
-          >
+              id="energetic"
+              value="energetic"
+              type="checkbox"
+              name="personality"
+            />
+            <label for="energetic">Energetic</label>
+          </fieldset>
+          <!-- Também é possível usar o atributo 'for' para associal o mesmo valor introduzido ao 'id'
+        ao <input> associado usando o elemento <label> com o atributo 'for'-->
+          <!-- Para definir que o item foi selecionado, o botão-rádio, por definição, precisa ter um atributo
+        'checked'. Não há a necessidade de adicionar o valor 'checked' como atributo, só é necessário
+        adicionar a palavra checked ao elemento <input>, certificando-se que existe um espaço entre a palavra
+        e os outros atributos-->
           <input
             type="text"
             name="catphotourl"
@@ -215,7 +251,11 @@
                 Vamos adicionar o atributo 'value' ao botões-rádio e definir, por conveniência
                 os mesmos valores que seus atributos de 'id' -->
 
-        <
+        <!-- O elemento <fieldset> é usado para agrupar entradas <inputs> e legendas <label> relacionadas
+                num formulário web. Os elementos do tipo <fieldset> são elementos block-level,
+                ou seja, significando que eles aparecem numa nova linha.
+                Podemos colocar os botões-rádio indoor e outdoor dentro de um elemento
+                fieldset-->
       </section>
       <!--Atributos são termos especiais usados com elementos para controlar o comportamento
             de um elemento. O atributo "src" em uma imagem especifica onde a imagem está localizada.
@@ -228,5 +268,10 @@
             "<a href -'para referenciar a ancoragem'- ='https://freecodecamp.org'></a>". Sendo necessário
             fechar o elemento de ancoragem-->
     </main>
+    <!--Depois da seção <main> no site temos sempre uma seção de <footer> na página.
+        Vamos adicionar o elemento <footer> à página-->
+    <footer>
+        <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+    </footer>
   </body>
 </html>
